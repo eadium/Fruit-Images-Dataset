@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/artem/scr/darxio/fruits/Fruit-Images-Dataset/src/image_classification/network/../fruit_models/model.ckpt"
+all_model_checkpoint_paths: "/home/artem/scr/darxio/fruits/Fruit-Images-Dataset/src/image_classification/network/../fruit_models/model.ckpt"

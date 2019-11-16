@@ -5,6 +5,7 @@ parent_dir = os.path.join(os.getcwd(), '../')
 data_dir = os.path.join(parent_dir, 'data/')
 fruit_models_dir = os.path.join(parent_dir, 'fruit_models/')
 labels_file = os.path.join(parent_dir, 'utils/labels')
+# labels_file = os.path.join('parent_dir', 'utils/labels')
 
 # change this to the path of the folders that hold the images
 training_images_dir = os.path.join(project_root, 'Training/')
