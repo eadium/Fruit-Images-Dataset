@@ -1,12 +1,12 @@
 import tensorflow as tf
-from utils import constants
+import constants
 
-with open(constants.root_dir + '\\utils\\labels') as f:
+with open(constants.parent_dir + 'utils/labels') as f:
     labels = f.readlines()
 labels = [x.strip() for x in labels]
 labels = ["nothing"] + labels
 
-tf.app.flags.DEFINE_string('image_path', 'images\\Lemon2.jpg', 'Path to image')
+tf.app.flags.DEFINE_string('image_path', 'images/Lemon2.jpg', 'Path to image')
 FLAGS = tf.app.flags.FLAGS
 
 
