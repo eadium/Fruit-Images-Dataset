@@ -9,6 +9,12 @@ labels = ["nothing"] + labels
 tf.app.flags.DEFINE_string('image_path', 'images/Lemon2.jpg', 'Path to image')
 FLAGS = tf.app.flags.FLAGS
 
+from tensorflow.compat.v1 import ConfigProto
+from tensorflow.compat.v1 import InteractiveSession
+
+config = ConfigProto()
+config.gpu_options.allow_growth = True
+session = InteractiveSession(config=config)
 
 # load image
 def read_image(image_path, image_reader):
